@@ -15,14 +15,11 @@ ORDER BY Price DESC
 LIMIT 2;
 
 -- Вывести список стран, которые поставляют морепродукты
-SELECT Country
-FROM Suppliers
-JOIN Products ON Suppliers.SupplierID = Products.SupplierID
-JOIN Categories ON Suppliers.CategoryID = Categories.CategoryID
-WHERE CategoryName.Categories = "Seafood";
 
-SELECT * 
-FROM Suppliers
-JOIN Products ON Suppliers.SupplierID = Products.SupplierID
-JOIN Categories ON Suppliers.CategoryID = Categories.CategoryID
-WHERE CategoryName = "Seafood"; 
+-- Не работает. Как поправить, я не знаю 
+
+-- SELECT Country
+-- FROM Suppliers
+-- JOIN Products ON Suppliers.SupplierID = Products.SupplierID
+-- JOIN Categories ON Suppliers.CategoryID = Categories.CategoryID
+-- WHERE CategoryName.Categories = "Seafood";
